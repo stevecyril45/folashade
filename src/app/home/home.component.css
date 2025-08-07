@@ -1,0 +1,108 @@
+.blurred {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.modal-popup {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  width: 80%;
+  max-width: 600px;
+  animation: fadeIn 0.3s ease-in-out;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.modal-close {
+  margin-top: 1rem;
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Optional dark background overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+}
+.folio-list__item-link {
+  position: static !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start;
+  gap: 20px;
+  background: none !important;
+  text-align: left;
+}
+
+.folio-list__item-text {
+  position: static !important;
+  color: white !important;
+}
+
+.folio-list__item-pic {
+  position: static !important;
+}
+@media (max-width: 768px) {
+  .row.about-info {
+    flex-direction: column;
+  }
+}
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .row.about-info {
+    flex-direction: column;
+    height: auto !important;
+  }
+
+  .about-info__pic-block img {
+    height: auto;
+    max-height: none;
+  }
+
+  .about-info__text {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .folio-list__item-link {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .folio-list__item-text {
+    padding: 10px;
+  }
+
+  .folio-list__item-pic {
+    max-width: 100% !important;
+  }
+}

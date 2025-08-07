@@ -1,0 +1,318 @@
+<!-- ## site header 
+        ================================================== -->
+<header class="s-header">
+
+    <div class="header-mobile">
+        <span class="mobile-home-link"><a href="html">Luther.</a></span>
+        <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+    </div>
+
+    <div class="row wide main-nav-wrap">
+        <nav class="column lg-12 main-nav">
+            <ul>
+                <li><a href="index.html" class="home-link">Luther.</a></li>
+                <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                <li><a href="#about" class="smoothscroll">About</a></li>
+                <li><a href="#works" class="smoothscroll">Works</a></li>
+                <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header> <!-- end s-header -->
+
+
+<!-- ## main content
+        ==================================================- -->
+<main class="s-content">
+
+
+    <!-- ### intro
+            ================================================== -->
+    <section id="intro" class="s-intro target-section">
+
+        <div class="row intro-content wide">
+
+            <div class="column">
+                <div class="text-pretitle with-line">
+                    Hello World
+                </div>
+
+                <h2 class="text-huge-title">
+                    I am Folashade Bolatito, <br>
+                    a Data Analyst <br>
+                    based <br>
+                    in Nigeria.
+                </h2>
+            </div>
+
+            <ul class="intro-social">
+                <li><a href="#0">Behance</a></li>
+                <li><a href="#0">Twitter</a></li>
+                <li><a href="#0">Dribbble</a></li>
+                <li><a href="#0">Instagram</a></li>
+            </ul>
+
+        </div> <!-- end intro content -->
+
+        <a href="#about" class="intro-scrolldown smoothscroll">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd">
+                <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
+            </svg>
+        </a>
+
+    </section> <!-- end s-intro -->
+
+
+    <div class="row about-info wide" style="height: auto; flex-wrap: wrap;">
+
+        <!-- Image Block -->
+        <div class="column lg-6 md-12 about-info__pic-block" style="padding: 0;">
+            <img src="../../assets/background1.jpg"
+                style="width: 100%; height: 100%; max-height: 500px; object-fit: cover;">
+        </div>
+
+        <!-- Text Block -->
+        <div class="column lg-6 md-12" style="display: flex; align-items: center; padding: 2rem;">
+            <div class="about-info__text">
+
+                <h2 class="text-pretitle with-line">About</h2>
+                <p class="attention-getter">
+                    Data Analyst skilled in SQL, Excel, Power BI, and Tableau, with a strong focus on data
+                    visualization and storytelling. Experienced in extracting, cleaning, and analyzing data from
+                    multiple sources to deliver clear, actionable insights across business, finance, healthcare,
+                    marketing, and tech sectors. Adept at building interactive dashboards and communicating results
+                    to support strategic decision-making. Passionate about solving problems and driving business
+                    outcomes through data.
+                </p>
+                <a href="../../assets/cv.png" class="btn btn--medium u-fullwidth">View CV</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ### about
+            ================================================== -->
+   
+        <div class="row about-expertise">
+            <section id="expertise">
+                <h6>EXPERTISE</h6>
+                <h1>
+                    SQL, Data Analysis, Microsoft Power BI,<br>
+                    Tableau, Data Visualization.
+                </h1>
+            </section>
+
+        </div> <!-- end about-expertise -->
+
+
+        <div class="row about-timelines">
+
+            <div class="column lg-6 tab-12">
+
+                <h2 class="text-pretitle">
+                    Experience
+                </h2>
+
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <h4 class="timeline__title">Morrhtech Solutions.</h4>
+                            <h5 class="timeline__meta">Junior Data Analyst.</h5>
+                            <p class="timeline__timeframe">April 2024 - june 2025.</p>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>Worked on extracting, cleaning, and analyzing data to deliver actionable insights for
+                                business decision-making. Used SQL to query databases, Excel for data preparation and
+                                analysis, and Power BI/Tableau to design interactive dashboards and reports. Focused on
+                                translating complex data into clear, visual stories that support strategic planning
+                                across various domains including business, finance, healthcare, marketing, and
+                                technology.</p>
+                        </div>
+                    </div>
+                </div> <!-- end timeline -->
+
+            </div> <!-- end column -->
+
+            <div class="column lg-6 tab-12">
+
+                <h2 class="text-pretitle">
+                    Education
+                </h2>
+
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <h4 class="timeline__title">Yaba College Of Technology,Lagos.</h4>
+                            <h5 class="timeline__meta">Business Administration and Management Technology</h5>
+                            <p class="timeline__timeframe">2016 - 2019</p>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>With a foundation in Business Administration and Management Technology, I’ve developed
+                                strong skills in organizational strategy, operations management, and decision-making.
+                                This background complements my data expertise by allowing me to analyze and interpret
+                                data within real-world business contexts—turning insights into actionable strategies
+                                that drive growth and efficiency.</p>
+                        </div>
+                    </div>
+                </div> <!-- end timeline -->
+            </div> <!-- end column -->
+
+
+        </div> <!-- end about-timelines -->
+
+  <!-- end s-about -->
+
+    <!-- Wrap all content that should blur inside a container -->
+
+  <div [class.blurred]="activeModalId">
+  <section>
+    <div style="color: white; text-align: center;">
+      <h2 class="text-pretitle">Recent Works</h2>
+      <p class="h2">
+        Here are some of my favorite projects I have done lately. <br />
+        Feel free to check them out.
+      </p>
+      <br />
+    </div>
+
+    <!-- Project Card -->
+    <li class="folio-list__item column" style="min-width: 100%;">
+      <a
+        class="folio-list__item-link"
+        (click)="openModal('modal-01')"
+        style="display: flex; flex-wrap: wrap; align-items: flex-start; text-decoration: none; gap: 20px; position: relative; z-index: 1; background: transparent;"
+      >
+        <!-- Image section -->
+        <div
+          class="folio-list__item-pic"
+          style="flex: 0 0 300px; width: 100%; max-width: 300px;"
+        >
+          <img
+            src="../../assets/projects/1.png"
+            style="width: 100%; height: auto; display: block;"
+          />
+        </div>
+
+        <!-- Text section -->
+        <div
+          class="folio-list__item-text"
+          style="flex: 1; color: white; min-width: 250px;"
+        >
+          <div style="font-size: 20px; font-weight: bold">
+            Sales Data Exploration and Dashboard Development
+          </div>
+          <p style="margin-top: 8px; font-size: 16px">
+            Click to view project details and interactive dashboard.
+          </p>
+        </div>
+      </a>
+    </li>
+  </section>
+</div>
+
+
+    <!-- Modal Template -->
+    <div *ngIf="activeModalId === 'modal-01'">
+        <!-- Optional: overlay background -->
+        <div class="modal-overlay" (click)="closeModal()"></div>
+
+        <div class="modal-popup">
+            <img src="../../assets/projects/2.png" />
+
+            <div class="modal-popup__desc">
+                <h5>Sales Data Exploration</h5>
+                <p>
+                    This dashboard project explored sales trends using Power BI to identify
+                    performance gaps and opportunities.
+                </p>
+                <ul class="modal-popup__cat">
+                    <li>Data Analysis</li>
+                    <li>Power BI</li>
+                </ul>
+            </div>
+
+            <a href="http://www.linkedin.com/in/folashade-bolatito-sikiru-0278b4147" class="modal-popup__details"
+                target="_blank">View Project</a>
+
+            <button class="modal-close" (click)="closeModal()">Close</button>
+        </div>
+    </div>
+
+
+    <!-- ### works
+            ================================================== -->
+
+    <!-- ### contact
+            ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row contact-top">
+            <div class="column lg-12">
+                <h2 class="text-pretitle">
+                    Get In Touch
+                </h2>
+
+                <p class="h1">
+                    I love to hear from you.
+                    Whether you have a question or just
+                    want to chat about Data Analysis — shoot me a message.
+                </p>
+            </div>
+        </div> <!-- end contact-top -->
+
+        <div class="row contact-bottom">
+            <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+                <h3 class="text-pretitle">Reach me at</h3>
+                <p class="contact-links">
+                    <a href="mailto:sayhello@luther.com" class="mailtoui">sfolashadebolatito@gmail.com</a> <br>
+                    <a href="tel:+1975432345">+234 816 353 9949</a>
+                </p>
+            </div>
+            <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block" style="margin-left: 6%;">
+                <h3 class="text-pretitle">Social</h3>
+                <ul class="contact-social">
+                    <li> <i class="fab fa-linkedin"></i>
+                        <a href="http://www.linkedin.com/in/folashade-bolatito-sikiru-0278b4147" target="_blank">
+                            linkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column lg-4 md-12 contact-block">
+                <a href="https://wa.me/2348163539949" target="_blank">
+                    <i class="fab fa-whatsapp fa-lg"></i> Chat on WhatsApp
+                </a>
+
+            </div>
+        </div> <!-- end contact-bottom -->
+
+    </section> <!-- end contact -->
+
+</main> <!-- end s-content -->
+
+
+<!-- ## footer
+        ================================================== -->
+<footer class="s-footer">
+
+    <div class="row">
+        <div class="column ss-copyright">
+            <span>© Copyright <a href="https://morrhtechsolutions.com" target="_blank"> Morrhtech Solution</a> </span>
+            <span>Design by <a href="https://morrhtechsolutions.com" target="_blank">Morrhtech Solutions</a></span>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd">
+                    <path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+</footer> <!-- end s-footer -->
